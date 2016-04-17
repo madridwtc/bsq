@@ -1,5 +1,5 @@
 NAME = bsq
-SRC = sorces/main.c
+SRC = sources/main.c
 OBJ = main.o
 FLAGS = -Wall -Werror -Wextra
 INCLUDE = includes/
