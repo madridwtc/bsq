@@ -1,7 +1,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 
-	int     v[9];/*v[3]='.'v[4]='o'v[5]='x'v[6]=ibv[2]=bv[0]=hv[1]=w*/
+int     v[9];/*v[3]='.'v[4]='o'v[5]='x'v[6]=ibv[2]=bv[0]=hv[1]=w*/
 /*v[7]=yv[8]=z*/
 void    ft_get_map(int y, char *argv);
 void    find_x(int x, int y, char r, char m[v[0]][v[1]]);
@@ -21,7 +21,7 @@ void    place_x(char m[v[0]][v[1]]) {
             while (++n[1] < v[1] && v[6] == 0 && n[1] < v[1] - v[2] + 1)
                 if (m[n[2]][n[1]] == v[3])
                     find_x(n[1], n[2], v[3], m);
- 	}
+        }
         if (v[6] == 2) v[2]++;
             else n[0] = block_x(v[2] - 1, m);
     }
